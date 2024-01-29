@@ -16,9 +16,9 @@ def gitDeployment(jobname,ip,context)
 }
 
 
-def gitTesting(repo)
+def gitTesting(jobname)
 {
-   git "https://github.com/intelliqittrainings/${repo}.git"
+   git "https://github.com/intelliqittrainings/${jobname}.git"
 }
 
 
