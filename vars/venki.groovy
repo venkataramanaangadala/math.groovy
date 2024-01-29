@@ -15,12 +15,12 @@ def gitDeployment(jobname,ip,context)
 
 }
 
-
-def gitTesting(jobname)
+def executeSelenium(jobname)
 {
-   git "https://github.com/intelliqittrainings/${jobname}.git"
-   sh "java -jar /var/lib/jenkins/workspace/${jobname}/testing.jar"
+ sh "java -jar /var/lib/jenkins/workspace/${jobname}/testing.jar" 
 }
+
+
 
 
 
