@@ -16,6 +16,12 @@ def gitDeployment(jobname,ip,context)
 }
 
 
+def gitTesting(repo)
+{
+   git "https://github.com/intelliqittrainings/${repo}.git"
+}
+
+
 
 
 
